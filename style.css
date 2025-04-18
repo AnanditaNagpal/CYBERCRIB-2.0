@@ -1,85 +1,76 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.3s, color 0.3s;
 }
-header {
-    background-color: #222;
-    color: white;
-    padding: 20px 0;
+
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.hero {
     text-align: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    padding: 50px 20px;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
+
+.logo {
+    max-width: 120px;
+    margin-bottom: 20px;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
 }
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
 section {
-    padding: 20px;
+    padding: 40px 20px;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    gap: 10px;
 }
-input, textarea {
-    margin: 10px 0;
+
+input, textarea, button {
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    font-size: 16px;
 }
+
 button {
-    padding: 10px;
-    background-color: #333;
+    background-color: #4e54c8;
     color: white;
     border: none;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #3b3f99;
+}
+
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #222;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-.dark-mode {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-}
-.dark-mode header, .dark-mode footer {
-    background-color: #111;
-}
-
-/* Smooth transitions */
-body, header, section {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-body.dark-mode header {
-  background-color: #1e1e1e;
-}
-
-body.dark-mode a {
-  color: #90caf9;
-}
-
-header img {
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Simple fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
